@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    rgba(39, 50, 131, 1) 0%,
+    rgba(9, 121, 118, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 31px 19px 14px;
+}
+
+#scoreBox {
+  background: linear-gradient(
+    135deg,
+    rgba(39, 50, 131, 1) 0%,
+    rgba(34, 96, 143, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  padding: 8px 17px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px rgb(17, 41, 87);
+  font-size: 24px;
+}
+
+#highScoreBox {
+  background: linear-gradient(
+    135deg,
+    rgba(39, 50, 131, 1) 0%,
+    rgba(34, 96, 143, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  padding: 8px 17px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bolder;
+  box-shadow: 5px 5px 5px rgb(17, 41, 87);
+  font-size: 24px;
+}
+
+#board {
+  background: rgb(143, 220, 255);
+  height: 650px;
+  width: 650px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(22, 1fr);
+  grid-template-columns: repeat(22, 1fr);
+  box-shadow: 5px 5px 5px black, inset 5px 5px 15px rgb(3, 94, 122);
+}
+
+.head {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 1) 11%,
+    rgba(39, 37, 96, 1) 51%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  border-radius: 10px;
+}
+
+.snake {
+  background-color: rgb(52, 54, 114);
+  margin: 2px;
+  border-radius: 24px;
+}
+
+.food {
+  background: linear-gradient(
+    135deg,
+    rgba(39, 50, 131, 1) 0%,
+    rgba(121, 9, 9, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  animation: shadow 2s infinite;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+}
+
